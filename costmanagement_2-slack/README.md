@@ -89,6 +89,3 @@ EC2 increased by +$25.25
 S3 decreased by -$4.10
 ```
 
-## Notes
-
-Do not hardcode the Slack webhook URL directly in the script. Store it as an environment variable instead.
