@@ -4,6 +4,12 @@ from datetime import datetime, timedelta
 import os 
 
 #Note, this script was mainly tested on AWS Lambda, but can also run as a Cronjob.
+
+#Uncomment and wrap under the following to make it work for AWS Lambda
+#def lambda_handler(event, context):
+#    ...
+
+
 #Set those variables before running the script
 AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
 AWS_CONSOLE_BASE_URL = f"https://{AWS_REGION}.console.aws.amazon.com/costmanagement/home?region={AWS_REGION}"
