@@ -61,11 +61,6 @@ python costmanagement-2-slack.py
 
 Or deploy it as an AWS Lambda function and trigger it on a schedule using EventBridge.
 
-Example schedule:
-
-```text
-rate(7 days)
-```
 
 ## Output
 
