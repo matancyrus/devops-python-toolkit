@@ -35,7 +35,6 @@ export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/..."
 ```
 
 `AWS_REGION` is used to generate the AWS Console Cost Explorer links.
-
 `SLACK_WEBHOOK_URL` is used to send the report to Slack.
 
 ## AWS IAM Permissions
