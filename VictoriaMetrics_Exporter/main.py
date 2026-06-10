@@ -76,7 +76,7 @@ def get_podscrapes():
                 FILE = f"{PATH_POD}/{namespace}/{vmpodscrape}.yaml"
                 #os.system(f"kubectl get vmpodscrape {vmpodscrape} -n {namespace} {KUBECTL_ARGS} -o yaml > {FILE}")
                 yaml_file = os.popen(f"kubectl get vmpodscrape {vmpodscrape} -n {namespace} {KUBECTL_ARGS} -o yaml").read()
-                yaml_to_k8s= yaml.load(yaml_file)
+                yaml_to_k8s= yaml.safe_load(yaml_file)
                 YAML_2_K8S(yaml_to_k8s)  
                 with open(FILE, 'w') as new_yaml:
                     yaml.dump(yaml_to_k8s, new_yaml, default_flow_style=False)         
@@ -106,7 +106,7 @@ def get_servicesscrapes():
                 FILE = f"{PATH_SERVICE}/{namespace}/{vmservicescrape}.yaml"
                 #os.system(f"kubectl get vmservicescrape {vmservicescrape} -n {namespace} {KUBECTL_ARGS} -o yaml > {FILE}")
                 yaml_file = os.popen(f"kubectl get vmservicescrape {vmservicescrape} -n {namespace} {KUBECTL_ARGS} -o yaml").read()
-                yaml_to_k8s= yaml.load(yaml_file)
+                yaml_to_k8s= yaml.safe_load(yaml_file)
                 YAML_2_K8S(yaml_to_k8s)  
                 with open(FILE, 'w') as new_yaml:
                     yaml.dump(yaml_to_k8s, new_yaml, default_flow_style=False)    
