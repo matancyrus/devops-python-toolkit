@@ -240,7 +240,6 @@ Future improvements could include:
 * Supporting multiple resource types dynamically.
 * Adding error handling for missing permissions.
 * Using `subprocess` instead of `os.popen`.
-* Using `yaml.safe_load()` instead of `yaml.load()`.
 * Skipping folders that already exist.
 * Adding support for cluster-scoped resources.
 * Adding logging instead of simple `print()` statements.
