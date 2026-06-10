@@ -57,7 +57,7 @@ The script requires permission to read Cost Explorer data:
 Run the script manually:
 
 ```bash
-python aws_weekly_cost_report.py
+python costmanagement_2_slack.py
 ```
 
 Or deploy it as an AWS Lambda function and trigger it on a schedule using EventBridge.
