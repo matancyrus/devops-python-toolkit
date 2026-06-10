@@ -236,6 +236,7 @@ The user running the script must have permissions to list namespaces and read th
 
 Future improvements could include:
 
+* Using the K8S python module directly.
 * Adding command-line arguments for resource type and output path.
 * Supporting multiple resource types dynamically.
 * Adding error handling for missing permissions.
